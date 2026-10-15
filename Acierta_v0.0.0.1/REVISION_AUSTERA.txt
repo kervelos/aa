@@ -1,0 +1,32 @@
+ACIERTA v0.0.0.1 — REVISIÓN AUSTERA
+========================================
+
+Resultado de revisión estática consolidada:
+
+PASS  1  Estructura mínima completa
+PASS  2  class_name únicos (26)
+PASS  3  Sin funciones duplicadas por archivo
+PASS  4  Orden de Autoload correcto
+PASS  5  Referencias res:// válidas
+PASS  6  Capas prediction/evaluation/feedback separadas
+PASS  7  Rutas user:// centralizadas en AppPaths
+PASS  8  Diálogos no eliminan nodos internos
+PASS  9  Sintaxis de pertenencia normalizada
+PASS 10  Delimitadores balanceados (revisión estática)
+PASS 11  Commit temporal + flush + .bak + recuperación presentes
+PASS 12  Evaluación y feedback usan actualización idempotente
+PASS 13  Smoke runner cubre persistencia, idempotencia y recovery
+
+ERRORES: 0
+ADVERTENCIAS: 0
+
+Correcciones incorporadas durante la consolidación:
+- Si un cierre deja solo un .tmp válido, el arranque puede recuperarlo.
+- El diálogo de marcas manuales ya no elimina nodos internos de ConfirmationDialog.
+- Navegación principal usa señales enlazadas sin lambda de parámetro por defecto.
+- Sintaxis de pertenencia normalizada a `x not in y`.
+- Una sola versión por función; se eliminaron variantes redundantes de capítulos anteriores.
+
+LIMITACIÓN DE ESTA REVISIÓN
+---------------------------
+En el entorno donde se preparó esta entrega no hay un ejecutable local de Godot disponible, por lo que no se pudo realizar aquí una compilación/ejecución real del motor. La revisión realizada es estructural/estática. El proyecto incluye `tests/smoke_runner.tscn` para ejecutar la comprobación con Godot 4.7.1 y la guía contiene la secuencia de prueba manual.

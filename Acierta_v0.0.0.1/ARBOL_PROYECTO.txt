@@ -1,0 +1,45 @@
+Acierta_v0.0.0.1/
+├── project.godot
+├── autoload/
+│   ├── app_paths.gd
+│   ├── database.gd
+│   ├── model_registry.gd
+│   ├── prediction_store.gd
+│   ├── feedback_store.gd
+│   └── evaluation_store.gd
+├── core/
+│   ├── date_utils.gd
+│   ├── game_profile.gd
+│   ├── json_file_store.gd
+│   ├── statistics_engine.gd
+│   ├── combination_score_engine.gd
+│   ├── confidence_engine.gd
+│   ├── combination_generator.gd
+│   ├── prediction_query_service.gd
+│   ├── learning_metrics_engine.gd
+│   ├── confidence_calibration_engine.gd
+│   ├── dashboard_summary_engine.gd
+│   ├── backtester.gd
+│   ├── weight_optimizer.gd
+│   └── project_audit.gd
+├── ui/
+│   ├── common/
+│   │   ├── number_ball.gd
+│   │   ├── attention_alert_button.gd
+│   │   └── ui_helpers.gd
+│   ├── panels/
+│   │   ├── home_dashboard_panel.gd
+│   │   ├── input_result_panel.gd
+│   │   ├── generator_panel.gd
+│   │   ├── statistics_panel.gd
+│   │   ├── history_panel.gd
+│   │   ├── comparison_panel.gd
+│   │   ├── backtesting_panel.gd
+│   │   └── settings_panel.gd
+│   └── main/
+│       ├── main.gd
+│       └── main.tscn
+└── tests/
+    ├── lotto_test_fixtures.gd
+    ├── smoke_runner.gd
+    └── smoke_runner.tscn

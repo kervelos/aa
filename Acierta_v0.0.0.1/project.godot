@@ -1,0 +1,30 @@
+; Engine configuration file.
+; Acierta v0.0.0.1
+
+config_version=5
+
+[application]
+config/name="Acierta"
+config/version="0.0.0.1"
+run/main_scene="res://ui/main/main.tscn"
+
+[autoload]
+AppPaths="*res://autoload/app_paths.gd"
+Database="*res://autoload/database.gd"
+ModelRegistry="*res://autoload/model_registry.gd"
+PredictionStore="*res://autoload/prediction_store.gd"
+FeedbackStore="*res://autoload/feedback_store.gd"
+EvaluationStore="*res://autoload/evaluation_store.gd"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/size/resizable=true
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
